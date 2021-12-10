@@ -1,0 +1,119 @@
+
+body{  
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(177, 177, 177);
+}
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    position: relative;
+}
+.navbar .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+}
+.navbar-toggler{
+    outline: none!important;
+}
+.bg-black{
+    background: rgb(0, 0, 0);
+}
+/*=========Slider======*/
+.carousel-item{
+    height: 600px;
+
+}
+.carousel-image-1{
+    background: linear-gradient(rgba(184, 129, 197, 0.905), rgba(36, 35, 35, 0.4));
+    background-size:cover;
+}
+.carousel-image-2{
+    background: linear-gradient(rgba(184, 129, 197, 0.905), rgba(36, 35, 35, 0.4));
+    background-size:cover;
+
+}
+.carousel-image-3{
+    background: linear-gradient(rgba(184, 129, 197, 0.905), rgba(36, 35, 35, 0.4));
+    background-size:cover; 
+}
+.title-color{
+    font-family: initial;
+    color: rgb(255, 255, 255);
+}
+.btn-color {
+    background:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.btn-color:hover{
+    color:rgb(168, 168, 168)
+}
+
+@keyframes slide-btn{
+    16%{
+        transform: translateY(8px);
+    }
+    33%{
+        transform: translateY(-6px);
+    }
+    50%{
+        transform: translateY(4px);
+    }
+    65%{
+        transform: translateY(-2px);
+    }
+    85%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.slide-btn{
+    display: inline-block;
+    vertical-align:middle;
+    transform: perspective(1px) translateY(0);
+    box-shadow: 0 0 1px rgba(114, 112, 112, 0);
+}
+.slide-btn:hover,
+.slide-btn:focus,
+.slide-btn:active{
+    animation-name: slide-btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:1;
+}
+/*end of slide*/
+
+/*=========footer======*/
+* {
+    margin:0;
+    padding:0;
+}
+ 
+html, body{
+    height: 100%;
+}
+
+#container{
+    min-height: 100%;
+}
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+   
+}
+
+#footer{
+background-color: #000;
+position: relative;
+height: 100px;
+margin-top: -100px;
+clear: both;
+}
+
+/*end of footer*/
+
